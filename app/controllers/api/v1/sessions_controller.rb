@@ -51,7 +51,7 @@ module Api
 
 		    def invalid_login_attempt
 		      warden.custom_failure!
-		      render :json=> {:success=>false, :message=>"Error with your login or password"}, :status=>401
+		      render :json=> {:success=>false, :message=>"Error with your email or password"}, :status=>401
 		    end
 		    
 		    def generate_authentication_token
